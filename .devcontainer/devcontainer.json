@@ -1,0 +1,11 @@
+{
+  "name": "gem5 Development",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "/bin/bash"
+  },
+  "extensions": [],
+  "postCreateCommand": "scons build/X86/gem5.opt -j$(nproc)"
+}
